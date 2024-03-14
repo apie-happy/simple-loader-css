@@ -1,0 +1,44 @@
+/*
+reset css
+*/
+* {margin:0;padding:0;}
+
+/* loader container */
+
+#loading-window {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #d7d5d5;
+}
+/* loader spin */
+.loader {
+    /* size */
+    height: 50px;
+    width: 50px;
+    /* transform circle */
+    border-radius: 100%;
+    background: transparent;
+    border: 5px solid transparent;
+    border-top: 5px solid #1e4fb1;
+    /* center */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* animation props */
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+}
+/* anim */
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
