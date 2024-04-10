@@ -1,1 +1,2 @@
-# simple-loader-css
+# Simple loader CSS
+[Result](./result.gif)
